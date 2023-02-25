@@ -1,0 +1,294 @@
+kiss:
+  command: "!kiss"
+  player_type: "dual"
+  delays:
+    default: 10
+  actions:
+    - "[broadcast] &b<player> &eha besado a &d<other_player> (づ￣ ³￣)づ #9adfae[<count>]"
+    - "[sound] <player> ENTITY_BEE_STING 1 1 3 3"
+    - "[sound] <other_player> ENTITY_BEE_STING 1 1 3 3"
+    - "[particle] <all> <player> HEART 7 2 0.5"
+    - "[particle] <all> <other_player> HEART 7 2 0.5"
+  gui:
+    enabled: true
+    material: "custom: menu_kiss"
+    
+dados:
+  command: "!dados"
+  player_type: "single"
+  actions:
+    - "[broadcast] &7<player> Ha tirado los dados: &6<random_1-6>"
+    
+random:
+  command: "!random"
+  player_type: "single"
+  actions:
+    - "[broadcast] &3[<player>] &9Tu jugador aleatorio es: &e<random_player-all>"
+    
+angry:
+  command: "!angry"
+  player_type: "optional"
+  actions:
+    - "[broadcast] #ff471a<player> #ff1a1aesta enojado/a #e6b800＼(&f&l｀#e6b800O&f´#e6b800)／"
+    - "[sound] <player> ENTITY_VILLAGER_DEATH 1 1 3 5"
+  dual_actions:
+    - "[broadcast] #ff471a<player> #ff1a1aesta enojado/a con #ff471a<other_player> #e6b800＼(&f&l｀#e6b800O&f´#e6b800)／"
+    - "[sound] <player> ENTITY_VILLAGER_DEATH 1 1 3 5"
+    - "[sound] <other_player> ENTITY_VILLAGER_DEATH 1 1 3 5"
+  gui:
+    enabled: true
+    material: "custom: menu_angry"
+    
+hug:
+  command: "!hug"
+  player_type: "dual"
+  actions:
+    - "[broadcast] #ffa8df<player> ha abrazado a <other_player>  (っಠ‿ಠ)っ  #9adfae[<count>]"
+    - "[sound] <player> ENTITY_EVOKER_CELEBRATE 1 2 3 10"
+    - "[sound] <other_player> ENTITY_EVOKER_CELEBRATE 1 2 3 10"
+  gui:
+    enabled: true
+    material: "custom: menu_hug"
+   
+bite:
+  command: "!bite"
+  player_type: dual
+  actions:
+    - "[broadcast] &b<player> &eha mordido a &d<other_player>"
+    - "[sound] <player> ENTITY_FOX_BITE 1 1 2 6"
+    - "[sound] <other_player> ENTITY_FOX_BITE 1 1 2 6"
+  gui:
+    enabled: true
+    material: "custom: menu_bite"
+    
+punch:
+  command: "!punch"
+  player_type: dual
+  actions:
+    - "[broadcast] &6[&7<player> &8ha golpeado a &7<other_player>&6]"
+    - "[sound] <player> ENTITY_PLAYER_HURT 1 1 4 4"
+    - "[sound] <other_player> ENTITY_PLAYER_HURT 1 1 4 4"
+  gui:
+    enabled: true
+    material: "custom: menu_punch"
+    
+blush:
+  command: "!blush"
+  player_type: optional
+  actions:
+    - "[broadcast] #fd8ce1<player> #e8a1d6Se sonroja #f9a4ee(#f56666//#6ff6d4•#f56666/#f9a4eeω#f56666/#6ff6d4•#f56666//#f9a4ee)"
+    - "[sound] <player> ENTITY_VILLAGER_YES 1 1 2 6"
+  dual_actions:
+    - "[broadcast] #fd8ce1<player> #e8a1d6Se ha sonrojado por #fd8ce1<other_player> #f9a4ee(#f56666//#6ff6d4•#f56666/#f9a4eeω#f56666/#6ff6d4•#f56666//#f9a4ee)"
+    - "[sound] <player> ENTITY_VILLAGER_YES 1 1 2 6"
+    - "[sound] <other_player> ENTITY_VILLAGER_YES 1 1 2 6"
+  gui:
+    enabled: true
+    material: "custom: menu_blush"
+
+love:
+  command: "!love"
+  player_type: dual
+  actions:
+    - "[broadcast] &7<player> &4&l❤&7 <other_player> &6[&d<random_0-100>%&6]"
+    - "[sound] <player> ENTITY_EVOKER_CELEBRATE 1 2 3 10"
+    - "[sound] <other_player> ENTITY_EVOKER_CELEBRATE 1 2 3 10"
+
+pat:
+  command: "!pat"
+  player_type: dual
+  actions:
+    - "[broadcast] #ade1d0<player>#d5b662 Ha acariciado a #ade1d0<other_player>"
+    - "[sound] <player> BLOCK_SNOW_STEP 1 9 3 6"
+    - "[sound] <other_player> BLOCK_SNOW_STEP 1 9 3 6"
+  gui:
+    enabled: true
+    material: "custom: menu_pat"
+
+lick:
+  command: "!lick"
+  player_type: dual
+  actions:
+    - "[broadcast]  #58bfe4<player> #b2dffaHa lamido a #58bfe4<other_player> #b8f1f9(^ꇴ~)つ"
+    - "[sound] <player> ENTITY_SALMON_FLOP 1 1 3 2"
+    - "[sound] <other_player> ENTITY_SALMON_FLOP 1 1 3 2"
+  gui:
+    enabled: true
+    material: "custom: menu_lick"
+
+confused:
+  command: "!confused"
+  player_type: optional
+  actions:
+    - "[broadcast] #ffff33<player> #ffff99se siente confundido/a #ffcc99(๑•﹏•)"
+    - "[sound] <player> ENTITY_WOLF_WHINE 1 1 3 5"
+  dual_actions:
+    - "[broadcast] #ffff33<player> #ffff99se siente confundido/a por #ffff33<other_player> #ffcc99(๑•﹏•)"
+    - "[sound] <player> ENTITY_WOLF_WHINE 1 1 3 5"
+    - "[sound] <other_player> ENTITY_WOLF_WHINE 1 1 3 5"
+    
+clap:
+  command: "!clap"
+  player_type: optional
+  actions:
+    - "[broadcast] #00ffff<player> #b3ffffestá aplaudiendo #99ffcc(* ﾟ∀ﾟ)ﾉｼ"
+    - "[sound] <player> ENTITY_PLAYER_ATTACK_NODAMAGE 1 1 3 5"
+  dual_actions:
+    - "[broadcast] #00ffff<player> #b3ffffle aplaude a #00ffff<other_player> #99ffcc(* ﾟ∀ﾟ)ﾉｼ"
+    - "[sound] <player> ENTITY_PLAYER_ATTACK_NODAMAGE 1 1 3 5"
+    - "[sound] <other_player> ENTITY_PLAYER_ATTACK_NODAMAGE 1 1 3 5"
+
+hungry:
+  command: "!hungry"
+  player_type: optional
+  actions:
+    - "[broadcast] #8c8c8c<player> #bfbfbftiene hambre &f(￣﹃￣)"
+    - "[sound] <player> ENTITY_CAT_BEG_FOR_FOOD 1 1 3 5"
+  dual_actions:
+    - "[broadcast] #8c8c8c<player> #bfbfbfse quiere comer a #8c8c8c<other_player> &f(￣﹃￣)"
+    - "[sound] <player> ENTITY_CAT_BEG_FOR_FOOD 1 1 3 5"
+    - "[sound] <other_player> ENTITY_PHANTOM_BITE 1 1 3 5"
+
+banana:
+  command: "!banana"
+  player_type: single
+  actions:
+    - "[broadcast] #cee359La banana de #dcf646<player> #cee359mide &c<random_5-25>cm"
+    - "[sound] <player> ENTITY_ARROW_HIT 1 -1 1 6"
+
+sleep:
+  command: "!zzz"
+  player_type: optional
+  actions:
+    - "[broadcast] #d24dff<player> #d580fftiene sueño #ff99ff(－.－)#00ace6ᶻᶻᶻ"
+    - "[sound] <player> ENTITY_FOX_SLEEP 1 1 3 6"
+  dual_actions:
+    - "[broadcast] #d24dff<player> #d580fftiene sueño por culpa de <other_player> #ff99ff(－.－)#00ace6ᶻᶻᶻ"
+    - "[sound] <player> ENTITY_FOX_SLEEP 1 1 3 6"
+    - "[sound] <other_player> ENTITY_FOX_SLEEP 1 1 3 6"
+
+cry:
+  command: "!cry"
+  player_type: optional
+  actions:
+    - "[broadcast] #8c8c8c<player> #bfbfbfesta llorando #666666(#99e6ff╥&f﹏#99e6ff╥#666666)"
+    - "[sound] <player> ENTITY_FOX_DEATH 1 1 3 6"
+  dual_actions:
+    - "[broadcast] #8c8c8c<other_player> #bfbfbfhizo llorar a #8c8c8c<player>  #666666(#99e6ff╥&f﹏#99e6ff╥#666666)"
+    - "[sound] <player> ENTITY_FOX_DEATH 1 1 3 6"
+    - "[sound] <other_player> ENTITY_FOX_DEATH 1 1 3 6"
+  gui:
+    enabled: true
+    material: "custom: menu_cry"
+
+sad:
+  command: "!sad"
+  player_type: optional
+  actions:
+    - "[broadcast] #3366ff<player> #6699ffse puso triste #cccccc(ᵕ﹏#ccffff̣#ccccccᵕ)"
+    - "[sound] <player> ENTITY_WOLF_WHINE 1 1 0 6"
+  dual_actions:
+    - "[broadcast] #3366ff<player> #6699ffse puso triste por culpa de #3366ff<other_player> #cccccc(ᵕ﹏#ccffff̣#ccccccᵕ)"
+    - "[sound] <player> ENTITY_WOLF_WHINE 1 1 0 6"
+    - "[sound] <other_player> ENTITY_WOLF_WHINE 1 1 0 6"
+  gui:
+    enabled: true
+    material: "custom: menu_sad"
+
+happy:
+  command: "!happy"
+  player_type: optional
+  actions:
+    - "[broadcast] #c44dff<player> #e7f91aesta feliz! #ff4d7cyeeeei! ↖(^▽^)↗"
+    - "[sound] <player> ENTITY_BAT_HURT 1 3 5 2"
+  dual_actions:
+    - "[broadcast] #c44dff<player> #e7f91aesta feliz gracias a #c44dff<other_player>! #ff4d7cyeeeei! ↖(^▽^)↗"
+    - "[sound] <player> ENTITY_BAT_HURT 1 3 5 2"
+    - "[sound] <other_player> ENTITY_BAT_HURT 1 3 5 2"
+  gui:
+    enabled: true
+    material: "custom: menu_happy"
+
+hello:
+  command: "!hi"
+  player_type: optional
+  actions:
+    - "[broadcast] #ffff00#ffff66<player> #ff99ddsaluda a todos#ff4dc4!! #4dffdb(^-^#ffccff*#4dffdb)/"
+    - "[sound] <player> ENTITY_FOX_AMBIENT 1 3 5 2"
+  dual_actions:
+    - "[broadcast] #ffff00#ffff66<player> #ff99ddsaluda a #ffdd99<other_player>#ff4dc4!! #4dffdb(^-^#ffccff*#4dffdb)/"
+    - "[sound] <player> ENTITY_FOX_AMBIENT 1 3 5 2"
+    - "[sound] <other_player> ENTITY_FOX_AMBIENT 1 3 5 2"
+  gui:
+    enabled: true
+    material: "custom: menu_hi"
+
+wag:
+  command: "!wag"
+  player_type: single
+  actions:
+    - "[broadcast] #ff00ff&o<player> #ff99ff&omenea la colita #ffff80&o(&f&o/ #b3ffff&o=#ffff80&oω#b3ffff&o=#ffff80&o)&f&o/ #ffcc66&o♡"
+    - "[sound] <player> ENTITY_CAT_PURREOW 1 -1 1 6"
+
+cookie:
+  command: "!cookie"
+  player_type: dual
+  actions:
+    - "[item] <other_player> cookie"
+    - "[broadcast] #bf8040<player> #d9b38cle ha regalado una galleta a #bf8040<other_player>"
+    - "[sound] <player> ENTITY_FOX_EAT 1 1 3 3"
+    - "[sound] <other_player> ENTITY_FOX_EAT 1 1 3 3"
+  gui:
+    enabled: true
+    material: "custom: menu_cookie"
+  delays:
+    default: 300
+
+login:
+  command: "!login"
+  player_type: single
+  actions:
+    - "[message] <player> &cError. usa /login <contraseña>"
+    - "[sound] <player> BLOCK_NOTE_BLOCK_HAT 1 1 3 2"
+
+lock:
+  command: "!lock"
+  player_type: "dual"
+  actions:
+    - "[togglelock]"
+
+###########################################____[SOUND]____#####################################################
+## - "[sound] <<player>/<other_player>> <sound> <volume> <pitch> <amount> <sleep>"                           ##
+##<player> / <other_player>: Player to play the sound to.                                                    ##
+##<volume>: Volumen del sonido.                                                                              ##
+##<pitch>: Pitch del sonido.                                                                                 ##
+##<amount>: Cantidad de repeticiones.                                                                        ##
+##<sleep>: Tiempo de espera entre repeticiones.                                                              ##
+###############################################################################################################
+
+##########################################____[PARTICLE]____###################################################
+## - "[particle] <<player>/<other_player>/<all>> <<player>/<other_player>> <amount> <sleep> [random]"        ##
+##<player> / <other_player> / <all>: Jugador/es que veran las particulas                                     ##
+##<player> / <other_player>: Jugador del  cual se tomara la ubicacion para spawnear las particulas.          ##
+##<amount>: Cantidad de repeticiones.                                                                        ##
+##<sleep>: Tiempo de espera entre repeticiones.                                                              ##
+###############################################################################################################
+
+############################################____[GUI]____######################################################
+## gui:                                                                       ##                             ##
+##   enabled: true                                                            ##                             ##
+##   material: "custom: <item name>" Item creados en items.yml ##                                            ##
+################################################################################                             ##
+## gui:                                                                                                      ##
+##   enabled: true                                                                                           ##
+##   material: "diamond_block                                                                                ##
+##   name: "&bRegalar un diamante"                                                                           ##
+##   lore:                                                                                                   ##
+##     - ""                                                                                                  ##
+##     - "&7Click para regalar a <other_player>"                                                             ##
+##   amount: 1                                                                                               ##
+##   damage: 0                                                                                               ##
+##   custom_model_data: 0                                                                                    ##
+##   player_head: "TEXTURA DEL JUGADOR AQUI"                                                                 ##
+##   player_head_uuid: "UUID PARA CABEZAS Y QUE ESTAS SEAN STACKEABLS"                                       ##
+###############################################################################################################

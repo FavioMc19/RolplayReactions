@@ -1,0 +1,15 @@
+need_player: "&cDebes ingresar el nombre de un jugador."
+
+wait_delay: "&cAun no puedes volver a usar esta accion"
+
+config_reloaded: "&aLa configuracion se recargo con exito!"
+
+lang_changed: "&aEl idioma se cambio con exito!."
+
+lang_no_exist: "&cEste idioma no se encuentra!. Puedes traducirlo y compartirlo en nuestro discord!"
+
+lock_action: "&cHas bloqueado la accion <action> al jugador <other_player>"
+
+unlock_action: "&aHas debloqueado la accion <action> al jugador <other_player>"
+
+no_permission: "&cNo tienes acceso a este comando."

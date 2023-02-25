@@ -1,0 +1,11 @@
+enabled_gui: true
+
+hover:
+  enabled: true
+  message:
+    - "&f<command> <other_player>"
+
+discordsrv:
+  enabled: false
+  channel: "INSERT CHANNEL ID HERE"
+

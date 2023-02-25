@@ -1,0 +1,15 @@
+need_player: "&cYou must enter a player."
+
+wait_delay: "&cYou still can't do this again."
+
+config_reloaded: "&aConfiguration reloaded successfully."
+
+lang_changed: "&aThe language has been successfully changed."
+
+lang_no_exist: "&cThis language is not found in the plugin. You can translate and share it on discord!"
+
+lock_action: "&cYou have blocked the action: <action> to <other_player>"
+
+unlock_action: "&aYou have unlocked the action: <action> to <other_player>"
+
+no_permission: "&cYou do not have access to this command."

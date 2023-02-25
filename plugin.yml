@@ -1,0 +1,10 @@
+name: RolplayReactions
+main: net.kokoricraft.actionschat.RolplayReactions
+version: 1.0.2
+api-version: 1.16
+softdepend: [Vault, PlaceholderAPI, DiscordSRV]
+commands:
+   RolplayReactions:
+      description: rolplayreactions command!
+      usage: /<command>
+      aliases: [rr]

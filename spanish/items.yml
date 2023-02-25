@@ -1,0 +1,115 @@
+menu_order_priority:
+ - "menu_kiss"
+
+locked_item:
+  name: "&c&l[Bloqueado <action>]"
+  lore:
+    - ""
+    - "&c&l-------------"
+  material: player_head
+  player_head: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTEyOGZhOWI4MThhNDczNjI4MDI5YmI0NjFlYmVjMzI4MTRjYjI1NTZiNWYxZThhMWMxNGQ2YWRmY2U2ZDg4MCJ9fX0"
+
+items:
+  menu_kiss:
+    name: "&eBesar a <other_player>"
+    material: player_head
+    player_head: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ1YmQxOGEyYWFmNDY5ZmFkNzJlNTJjZGU2Y2ZiMDJiZmJhYTViZmVkMmE4MTUxMjc3Zjc3OWViY2RjZWMxIn19fQ"
+    lore:
+      - ""
+  
+  menu_angry:
+    name: "&cEnojarte con <other_player>"
+    material: player_head
+    player_head: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjFkNGJlYTM2NmFjYTU4ZGQ1YjIyZTk0MGJjZGQ0YmE0NWJmODg0MjFmNmQ4MzExNThiODc5ZjJjOGFiY2UxOCJ9fX0="
+    lore:
+      - ""
+  
+  menu_hug:
+    name: "&aAbrazar a <other_player>"
+    material: player_head
+    player_head: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2I2YWNhOTE2MjcyZDlhMTBiYmQ4ZTAzOWMxYWMzNWI4NmZiMDZhYThiZGFlNTg5OWRhM2Q2ZTMxMDBlZjY1ZCJ9fX0="
+    lore:
+      - ""
+  
+  menu_bite:
+    name: "&aMorder a <other_player>"
+    material: player_head
+    player_head: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU4Njg1MjlmYmY0YmU2MjkzNzEyNzViMTEzOGRhYjkyOTU3NjAyMTcxNmVlNzM3ZGIxMjYzNGFhMTI1YWYzIn19fQ=="
+    lore:
+      - ""
+  
+  menu_punch:
+    name: "&cGolpear a <other_player>"
+    material: player_head
+    player_head: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjFkNGJlYTM2NmFjYTU4ZGQ1YjIyZTk0MGJjZGQ0YmE0NWJmODg0MjFmNmQ4MzExNThiODc5ZjJjOGFiY2UxOCJ9fX0="
+    lore:
+      - ""
+  
+  menu_blush:
+    name: "&a<other_player> te hace sonrojar"
+    material: player_head
+    player_head: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2I3ODkxNzQ1Njg2NTExZDUzOWFhZDkyYmEzMDM3YjAyNWFiYWRkYjllMmVlNmU1OWM3OTk3N2E3MTdhNGY5YiJ9fX0="
+    lore:
+      - ""
+  
+  menu_pat:
+    name: "&aAcariciar a <other_player>"
+    material: player_head
+    player_head: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzVhYTY4YjdmMWI4ZDViZjg0Yjc4MGY0ZWU3Nzk1MTZjMzhmNWNiYTE5ZDY1MzcxMmVkOWUwZDU5Njk2ZTg1NiJ9fX0="
+    lore:
+      - ""
+  
+  menu_lick:
+    name: "&aLamer a <other_player>"
+    material: player_head
+    player_head: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2ZmYWNjZjE3ODc5YjE3ODkxZmM1ZWY2NjQ3MmNjMDY2YTg1YmZhMzFiNmQ3ODZjMzJhZmVlNDc5NjA2OGQifX19"
+    lore:
+      - ""
+  
+  menu_cry:
+    name: "&c<other_player> te hizo llorar"
+    material: player_head
+    player_head: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzMyZmUxMjFhNjNlYWFiZDk5Y2VkNmQxYWNjOTE3OTg2NTJkMWVlODA4NGQyZjkxMjdkOGEzMTVjYWQ1Y2U0In19fQ=="
+    lore:
+      - ""
+
+  menu_sad:
+    name: "&c<other_player> te puso triste"
+    material: player_head
+    player_head: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWMyNjcyYWFhZTU4ZjNkMTg1MmQxOWI4NDIyY2FmNzBiMzI1ODJmOGRlM2ZjYjVjN2MyNGRhY2I3ZWJjMyJ9fX0="
+    lore:
+      - ""
+  
+  menu_happy:
+    name: "&a<other_player> te puso feliz"
+    material: player_head
+    player_head: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGFkMmI0ZTQ4OTU5NDk4YzNiZmIyZDE0OTg3NGVkYmY5YTBjZmJhZGNlYjU0YWQyNTlhYTQwNzA2ZGRhMWI2YyJ9fX0="
+    lore:
+      - ""
+  
+  menu_hi:
+    name: "&aSaludar a <other_player>"
+    material: player_head
+    player_head: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDE2OGI3MTYyODE2MzVjZWFmYzMyNjhkZmE3ZDVmNDY0NjZjODAzMmUxMWMxY2ZiN2RiNzExYTlmNjQ3ZCJ9fX0="
+    lore:
+      - ""
+  
+  menu_cookie:
+    name: "&aRegalar una galleta a <other_player>"
+    material: player_head
+    player_head: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzI5ZTNhMTFiYmRjNzhjNjZkNzkwNmVlOWNhNGE5Y2Y3ZDIyMDVhNDE3Y2FhM2M4ZWZmNzRmNTNiZDQzMDZiNyJ9fX0="
+    lore:
+      - ""
+  
+  cookie:
+    material: COOKIE
+    name: "#dcf24a[#ebf896Galletita#dcf24a]"
+    lore:
+      - ""
+      - "#f24a82Galleta regalado por #f02d6e<player>"
+      - ""
+      - "#e5f56bDisfruta o colecciona"
+      - "#e5f56bestas ingreibles galletas!"
+      - ""
+      - "#9bb6c5Fecha: #91afc0%localtime_time_dd/MM/YY%"
+    amount: 1
