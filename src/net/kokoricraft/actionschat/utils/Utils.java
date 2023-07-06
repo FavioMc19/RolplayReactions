@@ -16,18 +16,18 @@ import org.bukkit.inventory.ItemStack;
 import me.clip.placeholderapi.PlaceholderAPI;
 import me.clip.placeholderapi.PlaceholderAPIPlugin;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
-import net.kokoricraft.actionschat.RolplayReactions;
+import net.kokoricraft.actionschat.RoleplayReactions;
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.HoverEvent;
 import net.md_5.bungee.api.chat.TextComponent;
 
 public class Utils {
-	RolplayReactions plugin;
+	RoleplayReactions plugin;
 	
 	private boolean hasPapi;
 	
-	public Utils(RolplayReactions plugin) {
+	public Utils(RoleplayReactions plugin) {
 		this.plugin = plugin;
 		hasPapi = Bukkit.getPluginManager().getPlugin("PlaceholderAPI").isEnabled();
 	}
@@ -102,7 +102,7 @@ public class Utils {
 		return message += text.substring(index, text.length());
 	}
 	
-	Pattern hex_parse_pattern = Pattern.compile("§x(§[A-Fa-f0-9]){6}");
+	Pattern hex_parse_pattern = Pattern.compile("ï¿½x(ï¿½[A-Fa-f0-9]){6}");
 	
 	public String parseHex(String text) {
 		String nText = "";
@@ -110,7 +110,7 @@ public class Utils {
 		Matcher matcher = hex_parse_pattern.matcher(text);
 		
 		 while(matcher.find()) {
-			 nText+= text.substring(index, matcher.start())+matcher.group().replaceAll("§x", "").replaceAll("§", "");
+			 nText+= text.substring(index, matcher.start())+matcher.group().replaceAll("ï¿½x", "").replaceAll("ï¿½", "");
 			 index = matcher.end();
 		 }
 		 

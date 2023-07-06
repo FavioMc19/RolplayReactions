@@ -16,7 +16,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.scheduler.BukkitTask;
 
-import net.kokoricraft.actionschat.RolplayReactions;
+import net.kokoricraft.actionschat.RoleplayReactions;
 import net.kokoricraft.actionschat.enums.PlayerType;
 import net.kokoricraft.actionschat.objects.Action;
 import net.kokoricraft.actionschat.objects.NekoConfig;
@@ -27,14 +27,14 @@ import net.kokoricraft.actionschat.objects.PlaySound;
 
 public class Manager {
 	
-	RolplayReactions plugin;
+	RoleplayReactions plugin;
 	
 	private List<PlayBase> plays;
 	private Map<UUID, Long> delays;
 	public Map<String, Action> actions;
 	public Map<String, NekoItem> items;
 	
-	public Manager(RolplayReactions plugin) {
+	public Manager(RoleplayReactions plugin) {
 		this.plugin = plugin;
 		
 		plays = new ArrayList<PlayBase>();

@@ -1,9 +1,11 @@
 package net.kokoricraft.actionschat.objects;
 
-import java.lang.reflect.Field;
+import java.net.URL;
+import java.util.Base64;
 import java.util.List;
 import java.util.UUID;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
@@ -11,14 +13,12 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.meta.SkullMeta;
+import org.bukkit.profile.PlayerProfile;
 
-import com.mojang.authlib.GameProfile;
-import com.mojang.authlib.properties.Property;
-
-import net.kokoricraft.actionschat.RolplayReactions;
+import net.kokoricraft.actionschat.RoleplayReactions;
 
 public class NekoItem {
-	RolplayReactions plugin;
+	RoleplayReactions plugin;
 	
 	private String section_name;
 	private String name;
@@ -30,7 +30,7 @@ public class NekoItem {
 	private String player_head;
 	private String player_head_uuid;
 	
-	public NekoItem(RolplayReactions plugin, ConfigurationSection section) {
+	public NekoItem(RoleplayReactions plugin, ConfigurationSection section) {
 		this.plugin = plugin;
 		section_name = section.getName();
 		if(section.contains("name"))
@@ -112,17 +112,18 @@ public class NekoItem {
 	private ItemStack setHead(String texture, UUID uuid) {
 		ItemStack item = new ItemStack(Material.PLAYER_HEAD);
 		SkullMeta meta = (SkullMeta) item.getItemMeta();
-		
-		GameProfile profile = new GameProfile(uuid, null);
-		profile.getProperties().put("textures", new Property("textures", texture));
-		Field field;
+		PlayerProfile profile = Bukkit.createPlayerProfile(uuid, null);
 		try {
-			field = meta.getClass().getDeclaredField("profile");
-			field.setAccessible(true);
-			field.set(meta, profile);
-		} catch (Exception ex) {
-			plugin.getLogger().warning("The \""+texture+"\" texture is not correct. config section: ["+section_name+"]");
+			String url = "";
+			if(texture.length() < 60) url = "http://textures.minecraft.net/texture/"+texture;
+			if(!texture.contains("textures.minecraft")) {
+		        url = new String(Base64.getDecoder().decode(texture));
+			}
+			profile.getTextures().setSkin(new URL(url));
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
+		meta.setOwnerProfile(profile);
 		item.setItemMeta(meta);
 		return item;
 	}

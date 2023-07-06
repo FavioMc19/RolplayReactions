@@ -14,7 +14,7 @@ import net.kokoricraft.actionschat.managers.Manager;
 import net.kokoricraft.actionschat.utils.Metrics;
 import net.kokoricraft.actionschat.utils.Utils;
 
-public class RolplayReactions extends JavaPlugin{
+public class RoleplayReactions extends JavaPlugin{
 	
 	private Manager manager;
 	private Utils utils;
@@ -43,8 +43,8 @@ public class RolplayReactions extends JavaPlugin{
 	}
 	
 	public void registerCommands() {
-		getCommand("RolplayReactions").setExecutor(new Commands(this));
-		getCommand("RolplayReactions").setTabCompleter(new CommandsCompleter(this));
+		getCommand("RoleplayReactions").setExecutor(new Commands(this));
+		getCommand("RoleplayReactions").setTabCompleter(new CommandsCompleter(this));
 	}
 	
 	public void initHooks() {

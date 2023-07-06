@@ -2,15 +2,15 @@ package net.kokoricraft.actionschat.hooks;
 
 import org.bukkit.plugin.RegisteredServiceProvider;
 
-import net.kokoricraft.actionschat.RolplayReactions;
+import net.kokoricraft.actionschat.RoleplayReactions;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.permission.Permission;
 
 public class VaultHook {
 	
-	RolplayReactions plugin;
+	RoleplayReactions plugin;
 	
-	public VaultHook(RolplayReactions plugin) {
+	public VaultHook(RoleplayReactions plugin) {
 		this.plugin = plugin;
 		hasVault = initHooks();
 	}

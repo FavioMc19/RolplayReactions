@@ -9,13 +9,13 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import net.kokoricraft.actionschat.RolplayReactions;
+import net.kokoricraft.actionschat.RoleplayReactions;
 import net.kokoricraft.actionschat.objects.Action;
 import net.kokoricraft.actionschat.objects.NekoGui;
 
 public class GuiManager {
 	
-	RolplayReactions plugin;
+	RoleplayReactions plugin;
 	
 	Map<Player, NekoGui> reactions_inventorys;
 	Map<Player, NekoGui> config_inventorys;
@@ -23,7 +23,7 @@ public class GuiManager {
 	List<Action> gui_actions;
 	NekoGui players;
 	
-	public GuiManager(RolplayReactions plugin) {
+	public GuiManager(RoleplayReactions plugin) {
 		this.plugin = plugin;
 		reactions_inventorys = new HashMap<Player, NekoGui>();
 		config_inventorys = new HashMap<Player, NekoGui>();

@@ -11,7 +11,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
-import net.kokoricraft.actionschat.RolplayReactions;
+import net.kokoricraft.actionschat.RoleplayReactions;
 import net.kokoricraft.actionschat.enums.PlayerType;
 import net.kokoricraft.actionschat.objects.Action;
 import net.kokoricraft.actionschat.objects.NekoConfig;
@@ -19,9 +19,9 @@ import net.kokoricraft.actionschat.objects.NekoItem;
 
 public class ConfigManager {
 	
-	RolplayReactions plugin;
+	RoleplayReactions plugin;
 	
-	public ConfigManager(RolplayReactions plugin) {
+	public ConfigManager(RoleplayReactions plugin) {
 		this.plugin = plugin;
 		loadCounts();
 	}

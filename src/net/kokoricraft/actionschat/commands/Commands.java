@@ -10,7 +10,7 @@ import org.bukkit.command.CommandSender;
 
 import com.google.common.collect.Lists;
 
-import net.kokoricraft.actionschat.RolplayReactions;
+import net.kokoricraft.actionschat.RoleplayReactions;
 import net.kokoricraft.actionschat.enums.PlayerType;
 import net.kokoricraft.actionschat.objects.Action;
 import net.md_5.bungee.api.ChatColor;
@@ -18,9 +18,9 @@ import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.TextComponent;
 
 public class Commands implements CommandExecutor {
-	RolplayReactions plugin;
+	RoleplayReactions plugin;
 	
-	public Commands(RolplayReactions plugin) {
+	public Commands(RoleplayReactions plugin) {
 		this.plugin = plugin;
 	}
 
@@ -60,7 +60,7 @@ public class Commands implements CommandExecutor {
 		
 		boolean white = true;
 		s.sendMessage(plugin.getUtils().color("&3=================================================="));
-		s.sendMessage(plugin.getUtils().color("                            &d[&5RolplayReactions&d]"));
+		s.sendMessage(plugin.getUtils().color("                            &d[&5RoleplayReactions&d]"));
 		s.sendMessage(plugin.getUtils().color("               &6Required: <player>&8 | &6Optional: [player]"));
 		s.sendMessage("");
 		
@@ -97,7 +97,7 @@ public class Commands implements CommandExecutor {
 	}
 	
 	private boolean langCommand(CommandSender s, String l, String[] a) {
-		if(!per(s, "rolplayreactions.command.lang")) {
+		if(!per(s, "roleplayreactions.command.lang")) {
 			s.sendMessage(plugin.getUtils().color(plugin.getConfigManager().messages_no_permission));
 			return true;
 		}

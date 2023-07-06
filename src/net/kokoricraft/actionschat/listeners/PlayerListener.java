@@ -10,14 +10,14 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.inventory.ItemStack;
 
-import net.kokoricraft.actionschat.RolplayReactions;
+import net.kokoricraft.actionschat.RoleplayReactions;
 import net.kokoricraft.actionschat.objects.NekoGui;
 
 public class PlayerListener implements Listener{
 	
-	RolplayReactions plugin;
+	RoleplayReactions plugin;
 	
-	public PlayerListener(RolplayReactions plugin) {
+	public PlayerListener(RoleplayReactions plugin) {
 		this.plugin = plugin;
 	}
 	

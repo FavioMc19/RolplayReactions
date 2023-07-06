@@ -7,13 +7,13 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
 
-import net.kokoricraft.actionschat.RolplayReactions;
+import net.kokoricraft.actionschat.RoleplayReactions;
 
 public class CommandsCompleter implements TabCompleter {
 	
-	RolplayReactions plugin;
+	RoleplayReactions plugin;
 	
-	public CommandsCompleter(RolplayReactions plugin) {
+	public CommandsCompleter(RoleplayReactions plugin) {
 		this.plugin = plugin;
 	}
 

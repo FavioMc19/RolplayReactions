@@ -4,16 +4,16 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 
 import github.scarsz.discordsrv.DiscordSRV;
-import github.scarsz.discordsrv.dependencies.jda.api.entities.TextChannel;
-import net.kokoricraft.actionschat.RolplayReactions;
+import net.dv8tion.jda.api.entities.TextChannel;
+import net.kokoricraft.actionschat.RoleplayReactions;
 
 public class DiscordHook {
 	
-	RolplayReactions plugin;
+	RoleplayReactions plugin;
 	
 	public boolean hasDiscord = false;
 	
-	public DiscordHook(RolplayReactions plugin){
+	public DiscordHook(RoleplayReactions plugin){
 		this.plugin = plugin;
 		hasDiscord = Bukkit.getPluginManager().isPluginEnabled("DiscordSRV");
 	}

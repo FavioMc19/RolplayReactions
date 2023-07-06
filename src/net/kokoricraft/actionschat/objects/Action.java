@@ -12,14 +12,14 @@ import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
-import net.kokoricraft.actionschat.RolplayReactions;
+import net.kokoricraft.actionschat.RoleplayReactions;
 import net.kokoricraft.actionschat.enums.PlayerType;
 import net.md_5.bungee.api.chat.TextComponent;
 
 public class Action {
 	
 	private String name;
-	private RolplayReactions plugin;
+	private RoleplayReactions plugin;
 	private PlayerType player_type;
 	private List<String> actions;
 	private List<String> dual_actions;
@@ -28,7 +28,7 @@ public class Action {
 	private boolean enabled_gui;
 	private NekoItem item_gui;
 	
-	public Action(String name, RolplayReactions plugin) {
+	public Action(String name, RoleplayReactions plugin) {
 		this.name = name;
 		this.plugin = plugin;
 	}
