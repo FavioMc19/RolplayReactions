@@ -102,7 +102,7 @@ public class Utils {
 		return message += text.substring(index, text.length());
 	}
 	
-	Pattern hex_parse_pattern = Pattern.compile("�x(�[A-Fa-f0-9]){6}");
+	Pattern hex_parse_pattern = Pattern.compile("§x(§[A-Fa-f0-9]){6}");
 	
 	public String parseHex(String text) {
 		String nText = "";
@@ -110,7 +110,7 @@ public class Utils {
 		Matcher matcher = hex_parse_pattern.matcher(text);
 		
 		 while(matcher.find()) {
-			 nText+= text.substring(index, matcher.start())+matcher.group().replaceAll("�x", "").replaceAll("�", "");
+			 nText+= text.substring(index, matcher.start())+matcher.group().replaceAll("§x", "").replaceAll("§", "");
 			 index = matcher.end();
 		 }
 		 
